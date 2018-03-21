@@ -1,0 +1,7 @@
+Feature: Login functionality on login page of Application
+#foreach ($dataItem in $dataList)
+    Scenario: User is "$dataItem.get("sceneario")" to Login
+        Given Open the "$dataItem.get("browser")" and launch the application
+        When Enter the "$dataItem.get("username")" and "$dataItem.get("password")"
+        Then Submit the login button
+#end

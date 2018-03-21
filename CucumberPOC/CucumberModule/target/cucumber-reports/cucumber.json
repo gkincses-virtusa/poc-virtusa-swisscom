@@ -1,0 +1,136 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "User is \"success\" to Login",
+        "description": "",
+        "id": "login-functionality-on-login-page-of-application;user-is-\"success\"-to-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10482644305,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "Open the \"chrome\" and launch the application",
+            "match": {
+              "arguments": [
+                {
+                  "val": "chrome",
+                  "offset": 10
+                }
+              ],
+              "location": "LoginSteps.open_the_and_launch_the_application(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 181101019,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Enter the \"samraghav\" and \"13Mar2017\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "samraghav",
+                  "offset": 11
+                },
+                {
+                  "val": "13Mar2017",
+                  "offset": 27
+                }
+              ],
+              "location": "LoginSteps.enter_the_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4867928618,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Submit the login button",
+            "match": {
+              "location": "LoginSteps.Login_the_credential()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "User is \"failure\" to Login",
+        "description": "",
+        "id": "login-functionality-on-login-page-of-application;user-is-\"failure\"-to-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9105415681,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Open the \"chrome\" and launch the application",
+            "match": {
+              "arguments": [
+                {
+                  "val": "chrome",
+                  "offset": 10
+                }
+              ],
+              "location": "LoginSteps.open_the_and_launch_the_application(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 177441504,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Enter the \"username01\" and \"password01\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "username01",
+                  "offset": 11
+                },
+                {
+                  "val": "password01",
+                  "offset": 28
+                }
+              ],
+              "location": "LoginSteps.enter_the_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2066300941,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Submit the login button",
+            "match": {
+              "location": "LoginSteps.Login_the_credential()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login functionality on login page of Application",
+    "description": "",
+    "id": "login-functionality-on-login-page-of-application",
+    "keyword": "Feature",
+    "uri": "login.feature"
+  }
+]
