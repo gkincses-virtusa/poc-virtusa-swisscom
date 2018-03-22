@@ -1,6 +1,8 @@
 package com.cucumber.scripts;
 
+import com.cucumber.constants.ApplicationConstants;
 import com.cucumber.listener.Reporter;
+import com.cucumber.utils.ResourceUtils;
 import cucumber.api.CucumberOptions;
 import java.io.*;
 import java.net.URL;
@@ -25,6 +27,9 @@ public class Test {
 
     @AfterClass
     public static void writeExtentReport() {
-        Reporter.loadXMLConfig(Test.class.getResource("/src/main/resources/config/extent-config.xml").getFile());
+        File file = ResourceUtils.getFile(ApplicationConstants.EXTENT_CONFIG);
+        if (null != file) {
+            Reporter.loadXMLConfig(file);
+        }
     }
 }

@@ -34,6 +34,11 @@
                         </goals>
                         <configuration>
                             <mainClass>com.cucumber.utils.CucumberUtil</mainClass>
+                            <arguments>
+                                <argument>login.csv</argument>
+                                <argument>loginVelocityTemplate.vm</argument>
+                                <argument>login.feature</argument>
+                            </arguments>
                         </configuration>
                     </execution>
                 </executions>

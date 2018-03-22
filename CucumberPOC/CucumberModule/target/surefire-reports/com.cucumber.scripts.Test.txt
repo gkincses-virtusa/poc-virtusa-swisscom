@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.cucumber.scripts.Test
 -------------------------------------------------------------------------------
-Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.455 sec
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.473 sec
