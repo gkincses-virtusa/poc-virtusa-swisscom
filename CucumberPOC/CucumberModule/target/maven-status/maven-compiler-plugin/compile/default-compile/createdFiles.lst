@@ -1,6 +1,7 @@
-com\cucumber\constants\ApplicationConstants$SeleniumConstants.class
 com\cucumber\constants\ApplicationConstants.class
-com\cucumber\constants\ElementConstants$LoginPage.class
 com\cucumber\constants\ElementConstants.class
-com\cucumber\utils\CucumberUtil.class
+com\customer\account\Balance.class
+com\cucumber\constants\ApplicationConstants$SeleniumConstants.class
+com\cucumber\constants\ElementConstants$LoginPage.class
+com\cucumber\utils\FeatureFileUtil.class
 com\cucumber\utils\ResourceUtils.class

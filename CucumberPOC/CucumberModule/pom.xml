@@ -28,16 +28,32 @@
                 <version>1.6.0</version>
                 <executions>
                     <execution>
+                        <id>LoginFeatures</id>
                         <phase>test</phase>
                         <goals>
                             <goal>java</goal>
                         </goals>
                         <configuration>
-                            <mainClass>com.cucumber.utils.CucumberUtil</mainClass>
+                            <mainClass>com.cucumber.utils.FeatureFileUtil</mainClass>
                             <arguments>
                                 <argument>login.csv</argument>
                                 <argument>loginVelocityTemplate.vm</argument>
                                 <argument>login.feature</argument>
+                            </arguments>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>WithdrawFeatures</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                        <configuration>
+                            <mainClass>com.cucumber.utils.FeatureFileUtil</mainClass>
+                            <arguments>
+                                <argument>withdrawl.csv</argument>
+                                <argument>withdrawlVelocityTemplate.vm</argument>
+                                <argument>withdrawl.feature</argument>
                             </arguments>
                         </configuration>
                     </execution>
@@ -80,15 +96,9 @@
             <version>3.1.2</version>
         </dependency>
         <dependency>
-            <groupId>com.aventstack</groupId>
-            <artifactId>extentreports</artifactId>
-            <version>3.1.2</version>
-        </dependency>
-        <dependency>
             <groupId>org.apache.velocity</groupId>
             <artifactId>velocity</artifactId>
             <version>1.7</version>
         </dependency>
-
     </dependencies>
 </project>

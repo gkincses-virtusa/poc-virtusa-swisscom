@@ -1,0 +1,4 @@
+Balance , Withdrawl , Received , Remaining, Outcome
+$500, $50, $50, $450, received $50 cash
+$200, $60, $60, $140, received $60 cash
+$100, $200, $0, $100, received an error

@@ -51,7 +51,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Mar 22, 2018 11:07:31 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Mar 22, 2018 03:52:55 PM</span>
 				</a>
 			</li>
 			<li>
@@ -127,7 +127,7 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> feature(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -142,7 +142,7 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>5</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -157,7 +157,7 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>6</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>21</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -177,12 +177,12 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Login functionality on login page of Application</span>
-						<span class='test-time'>Mar 22, 2018 11:07:31 AM</span>
+						<span class='test-time'>Mar 22, 2018 03:52:55 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenario node' test-id='2' status='pass'>
-	<span class='duration right label'>0h 0m 22s+562ms</span>
+	<span class='duration right label'>0h 0m 15s+848ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">User is "success" to Login</span>
@@ -215,7 +215,7 @@
 	</ul>
 </div>
 <div class='scenario node' test-id='6' status='pass'>
-	<span class='duration right label'>0h 0m 19s+215ms</span>
+	<span class='duration right label'>0h 0m 11s+537ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">User is "failure" to Login</span>
@@ -244,6 +244,113 @@
 			<span class="bdd-step-name">Then Submit the login button</span>
 				<div class='pre'>passed</div>
 			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='10'>
+					<div class='test-heading'>
+						<span class='test-name'>Withdraw amount</span>
+						<span class='test-time'>Mar 22, 2018 03:53:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenariooutline node' test-id='11' status='pass'>
+	<span class='duration right label'>0h 0m 0s+54ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Try to withdraw <Withdrawl> amount</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='12' class='node scenario pass' status='pass'>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Try to withdraw $50 amount</span>
+			
+				<ul class='steps'>
+					<li test-id='13' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given I have $500 in my account</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='14' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When When I choose to withdraw the amount $50</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='15' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then I received $50</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='16' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And the balance of my account should be $450</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='17' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And the outcome is received $50 cash</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='18' class='node scenario pass' status='pass'>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Try to withdraw $60 amount</span>
+			
+				<ul class='steps'>
+					<li test-id='19' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given I have $200 in my account</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='20' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When When I choose to withdraw the amount $60</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='21' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then I received $60</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='22' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And the balance of my account should be $140</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='23' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And the outcome is received $60 cash</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='24' class='node scenario pass' status='pass'>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Try to withdraw $200 amount</span>
+			
+				<ul class='steps'>
+					<li test-id='25' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given I have $100 in my account</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='26' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When When I choose to withdraw the amount $200</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='27' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then I received $0</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='28' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And the balance of my account should be $100</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='29' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And the outcome is received an error</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
 		</li>
 	</ul>
 </div>
@@ -284,37 +391,37 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Features
-					<div class='panel-lead'>1</div>
-				</div>
-			</div>
-			<div class='col s2'>
-				<div class='card-panel r'>
-					Scenarios
 					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
+					Scenarios
+					<div class='panel-lead'>5</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>6</div>
+					<div class='panel-lead'>21</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Mar 22, 2018 11:07:31 AM</div>
+					<div class='panel-lead'>Mar 22, 2018 03:52:55 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Mar 22, 2018 11:08:13 AM</div>
+			 		<div class='panel-lead'>Mar 22, 2018 03:53:22 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>42,083ms</div>
+					<div class='panel-lead'>27,750ms</div>
 				</div>
 			</div>
 		</div>
@@ -327,7 +434,7 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 1,
+				passParent: 2,
 				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
@@ -335,7 +442,7 @@
 				skipParent: 0,
 				exceptionsParent: 0,
 				
-				passChild: 2,
+				passChild: 5,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
@@ -344,7 +451,7 @@
 				infoChild: 0,
 				exceptionsChild: 0,
 				
-				passGrandChild: 6,
+				passGrandChild: 21,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,

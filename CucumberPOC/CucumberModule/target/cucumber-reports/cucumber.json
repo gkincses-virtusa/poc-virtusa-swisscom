@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 11880130190,
+              "duration": 7392814638,
               "status": "passed"
             },
             "line": 3,
@@ -30,7 +30,7 @@
           },
           {
             "result": {
-              "duration": 172486067,
+              "duration": 180658425,
               "status": "passed"
             },
             "line": 4,
@@ -52,7 +52,7 @@
           },
           {
             "result": {
-              "duration": 10414118500,
+              "duration": 8174785912,
               "status": "passed"
             },
             "line": 5,
@@ -74,7 +74,7 @@
         "steps": [
           {
             "result": {
-              "duration": 11398593889,
+              "duration": 9326508812,
               "status": "passed"
             },
             "line": 7,
@@ -92,7 +92,7 @@
           },
           {
             "result": {
-              "duration": 162832460,
+              "duration": 171318587,
               "status": "passed"
             },
             "line": 8,
@@ -114,7 +114,7 @@
           },
           {
             "result": {
-              "duration": 7648864237,
+              "duration": 2030582532,
               "status": "passed"
             },
             "line": 9,
@@ -132,5 +132,360 @@
     "id": "login-functionality-on-login-page-of-application",
     "keyword": "Feature",
     "uri": "login.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 10,
+        "name": "Try to withdraw $50 amount",
+        "description": "",
+        "id": "withdraw-amount;try-to-withdraw-\u003cwithdrawl\u003e-amount;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2604553,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I have $500 in my account",
+            "match": {
+              "arguments": [
+                {
+                  "val": "500",
+                  "offset": 8
+                }
+              ],
+              "location": "WithdrawlSteps.updateBalance(int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 129510,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "When I choose to withdraw the amount $50",
+            "match": {
+              "arguments": [
+                {
+                  "val": "50",
+                  "offset": 38
+                }
+              ],
+              "location": "WithdrawlSteps.withdrawl(int)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4175665,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I received $50",
+            "match": {
+              "arguments": [
+                {
+                  "val": "50",
+                  "offset": 12
+                }
+              ],
+              "location": "WithdrawlSteps.received(int)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 109498,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the balance of my account should be $450",
+            "match": {
+              "arguments": [
+                {
+                  "val": "450",
+                  "offset": 37
+                }
+              ],
+              "location": "WithdrawlSteps.remaining(int)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 66077,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the outcome is received $50 cash",
+            "match": {
+              "arguments": [
+                {
+                  "val": "received $50 cash",
+                  "offset": 15
+                }
+              ],
+              "location": "WithdrawlSteps.outcome(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "Try to withdraw $60 amount",
+        "description": "",
+        "id": "withdraw-amount;try-to-withdraw-\u003cwithdrawl\u003e-amount;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 68343,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I have $200 in my account",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 8
+                }
+              ],
+              "location": "WithdrawlSteps.updateBalance(int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 80048,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "When I choose to withdraw the amount $60",
+            "match": {
+              "arguments": [
+                {
+                  "val": "60",
+                  "offset": 38
+                }
+              ],
+              "location": "WithdrawlSteps.withdrawl(int)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 177841,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I received $60",
+            "match": {
+              "arguments": [
+                {
+                  "val": "60",
+                  "offset": 12
+                }
+              ],
+              "location": "WithdrawlSteps.received(int)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 69475,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the balance of my account should be $140",
+            "match": {
+              "arguments": [
+                {
+                  "val": "140",
+                  "offset": 37
+                }
+              ],
+              "location": "WithdrawlSteps.remaining(int)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 94017,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the outcome is received $60 cash",
+            "match": {
+              "arguments": [
+                {
+                  "val": "received $60 cash",
+                  "offset": 15
+                }
+              ],
+              "location": "WithdrawlSteps.outcome(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "Try to withdraw $200 amount",
+        "description": "",
+        "id": "withdraw-amount;try-to-withdraw-\u003cwithdrawl\u003e-amount;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 133286,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I have $100 in my account",
+            "match": {
+              "arguments": [
+                {
+                  "val": "100",
+                  "offset": 8
+                }
+              ],
+              "location": "WithdrawlSteps.updateBalance(int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 77782,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "When I choose to withdraw the amount $200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 38
+                }
+              ],
+              "location": "WithdrawlSteps.withdrawl(int)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 60035,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I received $0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 12
+                }
+              ],
+              "location": "WithdrawlSteps.received(int)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 58147,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the balance of my account should be $100",
+            "match": {
+              "arguments": [
+                {
+                  "val": "100",
+                  "offset": 37
+                }
+              ],
+              "location": "WithdrawlSteps.remaining(int)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 40023,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the outcome is received an error",
+            "match": {
+              "arguments": [
+                {
+                  "val": "received an error",
+                  "offset": 15
+                }
+              ],
+              "location": "WithdrawlSteps.outcome(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Withdraw amount",
+    "description": "",
+    "id": "withdraw-amount",
+    "keyword": "Feature",
+    "uri": "withdrawl.feature"
   }
 ]

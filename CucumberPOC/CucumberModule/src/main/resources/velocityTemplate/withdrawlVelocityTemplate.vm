@@ -1,0 +1,12 @@
+Feature: Withdraw amount
+    Scenario Outline: Try to withdraw <Withdrawl> amount
+        Given I have <Balance> in my account
+        When When I choose to withdraw the amount <Withdrawl>
+        Then I received <Received>
+        And the balance of my account should be <Remaining>
+        And the outcome is <Outcome>
+    Examples:
+    | Balance | Withdrawl | Received | Remaining | Outcome |
+#foreach ($dataItem in $dataList)
+    | $dataItem.get("Balance") | $dataItem.get("Withdrawl") | $dataItem.get("Received") | $dataItem.get("Remaining") | $dataItem.get("Outcome") |
+#end

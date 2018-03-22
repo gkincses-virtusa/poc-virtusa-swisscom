@@ -10,12 +10,12 @@ import java.io.*;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class CucumberUtil {
+public class FeatureFileUtil {
 
     public static void readAndProcessInputFile(String csvFile, String velocityTemplateFile, String featureFile) {
         List<String> inputList = new ArrayList<String>();
         try {
-            InputStream inputFS = CucumberUtil.class.getClassLoader()
+            InputStream inputFS = FeatureFileUtil.class.getClassLoader()
                     .getResourceAsStream("csv/"+csvFile);
             BufferedReader br = new BufferedReader(new InputStreamReader(inputFS));
             String firstLine = br.readLine();
@@ -60,7 +60,7 @@ public class CucumberUtil {
     }
 
     public static void main(String[] args) {
-        CucumberUtil.readAndProcessInputFile(args[0], args[1], args[2]);
+        FeatureFileUtil.readAndProcessInputFile(args[0], args[1], args[2]);
     }
 }
 
